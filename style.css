@@ -1,0 +1,339 @@
+/* Global Effection */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+html, body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+a:hover {
+    color:lightblue;
+}
+h1 {
+    font-size: 2.6rem;
+
+}
+h2 {
+    font-size: 2rem;
+}
+p, input, label{
+    font-size: 2rem;
+}
+button {
+    padding: 2rem 6rem;
+    background-color:#4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    transition: all 0.5s ease-in-out;
+}
+button:hover {
+    background: #27394e;
+
+  }
+
+/* Global Effection ended */
+/* Nav section */
+.container {
+    display: flex;
+    background-color: #131c27;;
+    width: 100%;
+    min-height: 10vh;
+    color: white;
+    padding: 2rem;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    
+
+}
+.container nav {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    flex-flow: row wrap;
+   
+
+}
+.container nav ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+   
+    
+}
+#logo {
+   flex: 1 1 40rem;
+   font-family: "Pattaya", sans-serif;
+   font-weight: 400;
+   font-size: 2.6rem;
+}
+
+/* Nav section ended */
+
+/* Hero section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(./img/landing-page.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    min-height: 90vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    
+
+}
+.hero > h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+
+}
+
+
+.hero > h2 {
+        padding: 5rem;
+        font-weight: normal;
+}
+/* Hero section ended */
+.location {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./img/new-york-page.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+}
+.location-head{
+        width: 90%;
+        margin: auto;
+    
+}
+.location-head > h1 {
+    font-size: 4rem;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+   
+}
+.location-head > h2 {
+    padding: 2rem 0;
+    font-size: 3rem;
+    font-weight: normal;
+    background: linear-gradient(#131c27, #663b34);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.cloud-back {
+    top:20%
+    opacity: 0.5;
+    z-index: -1;
+    animation: cloudmoving 3.5s infinite alternate ease-in-out;
+    
+}
+.cloud-moving {
+    animation: cloudmoving 3s infinite alternate ease-in-out;
+}
+@keyframes cloudmoving {
+    from {
+        transform: translate(10%, -10%);
+    }
+    to {
+        transform: translate(0%, 0%);
+      }
+}
+
+/* Hero Section Ended */
+
+/* Class Benefit header */
+.Benefits-head {
+    min-height: 30vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #223347;
+    color: white;
+    padding: 3rem;
+}
+
+.Benefits-head > h2 {
+    font-weight: normal;
+    padding: 2rem;
+
+}
+.Benefits-head > h1 {
+    font-size: 5rem;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+/* Three Cards */
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    min-height: 70vh;
+    align-items: center;
+    
+   
+}
+.card {
+      display: flex;
+      width: 30%;
+      min-height: 40vh;
+      flex: 1 1 25rem;
+      margin: 2rem 5rem;
+      flex-flow: column nowrap;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      text-align: center;
+
+}
+.card h1, .card p {
+    padding: 1rem;
+    line-height: 1.8;
+}
+
+
+.icon {
+    background-color: #192636;
+    max-width: 10%;
+    max-height: 10%;
+    margin: 2rem auto;
+    
+    
+}
+.icon-back {
+    background-color:#1c2a3b;
+    min-height: 5rem;
+    width: 100%;
+}
+
+/* Three Cards ended*/
+/* Class Benefit-header ended*/
+
+/*Form Section*/
+.form-main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(./img/contact-mountain.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-container {
+    background: rgba(19, 28, 39, 0.8);
+    color: white;
+    min-width: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.form-head {
+    padding: 4rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+
+}
+.name , .email {
+   padding: 3rem;
+   text-align: center;
+   font-size: 2rem;
+}
+.form-container input {
+    padding: 0.5rem 3rem;
+}
+.form-container button {
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 6rem;
+    padding: 2rem;
+}
+.form-container label {
+    margin: 0rem 3rem;
+    font-size: 5rem;
+}
+footer {
+    min-height: 10vh;
+    background-color:#0f1721 ;
+    
+}
+
+.logos {
+    color: white;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center ;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    min-height: 10vh;
+    align-items: center;
+   
+}
+.logo-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*Form Section ended*/
+
+/* Mobile Responsive part */
+@media screen and (max-width:932px) {
+    html {
+        font-size: 45%;
+    }
+    nav {
+        text-align: center;
+    }
+    .cloud {
+        pointer-events: none;
+        height: 40rem;
+    }
+    footer {
+        text-align: center;
+      }
+
+}
+/* Mobile Responsive part ended*/
+
+
+
+
+
+
+
+
